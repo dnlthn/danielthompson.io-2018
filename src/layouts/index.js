@@ -1,16 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import 'glamor/reset'
 
 import Logo from 'components/logo'
 import {
   BodyLayout,
-  MainLayout,
-  LogoLayout,
   ContentLayout,
+  LogoLayout,
+  MainLayout,
 } from 'layouts/general'
+import NavIcon from 'components/nav-icon'
+
+import navigation from 'data/nav'
 
 const RootLayout = ({ children, data }) => {
   const { title, description, keywords } = data.site.siteMetadata
@@ -31,11 +34,26 @@ const RootLayout = ({ children, data }) => {
             },
           ]}
         />
-
         <LogoLayout>
           <Logo />
         </LogoLayout>
 
+        {navigation.map(nav_item => {
+          if (nav_item.isReleased) {
+            return (
+              <div
+                key={nav_item.label}
+                style={{
+                  height: '50px',
+                  width: '50px',
+                  margin: '1rem',
+                }}
+              >
+                <NavIcon {...nav_item} />
+              </div>
+            )
+          }
+        })}
         <ContentLayout>{children()}</ContentLayout>
       </MainLayout>
     </BodyLayout>
