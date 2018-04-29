@@ -1,5 +1,5 @@
 import React from 'react'
 
-const IndexPage = () => <div>Index World!</div>
+const IndexPage = () => <div />
 
 export default IndexPage
