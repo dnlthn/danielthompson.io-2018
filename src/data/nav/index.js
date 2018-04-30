@@ -8,7 +8,7 @@ import speedometer from 'images/nav/speedometer.svg'
 const data = [
   { label: 'Email', svg: at, path: '/email', isReleased: false },
   { label: 'Skills', svg: speedometer, path: '/skills', isReleased: true },
-  { label: 'Projects', svg: imac, path: '/projects', isReleased: true },
+  { label: 'Projects', svg: imac, path: '/projects', isReleased: false },
   { label: 'Rantings', svg: pen, path: '/blog', isReleased: false },
   {
     label: 'GitHub',
