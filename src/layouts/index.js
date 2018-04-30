@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import 'glamor/reset'
+import { css } from 'glamor'
 
 import ScalableImg from 'components/reusable/scalable-img'
 import logo_svg from 'images/daniel-thompson-logo.svg'
@@ -15,6 +16,9 @@ import {
 } from 'components/unique/root-layouts'
 import NavBar from 'components/unique/nav-bar'
 
+css.global('body', {
+  backgroundColor: '#37394C',
+})
 const RootLayout = ({ children, data }) => {
   const { title, description, keywords } = data.site.siteMetadata
 
