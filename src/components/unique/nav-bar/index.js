@@ -24,6 +24,7 @@ const Container = glamorous.div({
   gridTemplateColumns: `repeat(${number_of_displayed_icons}, 20px)`,
   justifyContent: 'end',
   marginTop: '.5rem',
+  marginBottom: '4rem',
 
   '@media(min-width: 576px)': {
     gridGap: '1.5rem',
