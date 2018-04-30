@@ -7,20 +7,20 @@ import speedometer from 'images/nav/speedometer.svg'
 
 const data = [
   { label: 'Email', svg: at, path: '/email', isReleased: false },
-  { label: 'Skills', svg: speedometer, path: '/skills', isReleased: false },
-  { label: 'Projects', svg: imac, path: '/projects', isReleased: false },
+  { label: 'Skills', svg: speedometer, path: '/skills', isReleased: true },
+  { label: 'Projects', svg: imac, path: '/projects', isReleased: true },
   { label: 'Rantings', svg: pen, path: '/blog', isReleased: false },
   {
     label: 'GitHub',
     svg: github,
     path: 'https://www.github.com/dnlthn',
-    isReleased: false,
+    isReleased: true,
   },
   {
     label: 'Twitter',
     svg: twitter,
     path: 'https://www.twitter.com/dnlthn',
-    isReleased: false,
+    isReleased: true,
   },
 ]
 

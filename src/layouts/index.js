@@ -4,14 +4,15 @@ import React from 'react'
 
 import 'glamor/reset'
 
-import Logo from 'components/logo'
+import Logo from 'components/reusable/logo'
 import {
   BodyLayout,
   ContentLayout,
   LogoLayout,
   MainLayout,
-} from 'layouts/general'
-import NavIcon from 'components/nav-icon'
+} from 'components/unique/root-layouts'
+import NavBar from 'components/unique/nav-bar'
+import NavIcon from 'components/reusable/nav-icon'
 
 import navigation from 'data/nav'
 
@@ -36,24 +37,8 @@ const RootLayout = ({ children, data }) => {
         />
         <LogoLayout>
           <Logo />
+          <NavBar />
         </LogoLayout>
-
-        {navigation.map(nav_item => {
-          if (nav_item.isReleased) {
-            return (
-              <div
-                key={nav_item.label}
-                style={{
-                  height: '50px',
-                  width: '50px',
-                  margin: '1rem',
-                }}
-              >
-                <NavIcon {...nav_item} />
-              </div>
-            )
-          }
-        })}
         <ContentLayout>{children()}</ContentLayout>
       </MainLayout>
     </BodyLayout>
