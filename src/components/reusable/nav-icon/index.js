@@ -8,7 +8,14 @@ const NavIcon = ({ path, label, svg, isReleased }) => {
   return path.startsWith('/') ? (
     <Link
       to={path}
-      activeStyle={{ borderBottom: '3px solid #FECA57', borderRadius: '1px' }}
+      style={{
+        borderBottom: '3px solid transparent',
+        borderRadius: '1px',
+      }}
+      activeStyle={{
+        borderBottom: '3px solid #FECA57',
+        borderRadius: '1px',
+      }}
     >
       <Tooltip text={label} putBelow>
         <Image src={svg} alt={`Navigate to the ${label} page`} />
