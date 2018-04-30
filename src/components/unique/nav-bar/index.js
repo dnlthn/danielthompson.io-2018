@@ -1,7 +1,8 @@
 import React from 'react'
-
 import glamorous from 'glamorous'
+
 import IconWithLink from 'components/reusable/icon-link'
+
 import navigation from 'data/nav'
 
 const NavBar = () => (
