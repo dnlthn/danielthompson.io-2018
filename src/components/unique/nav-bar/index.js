@@ -1,14 +1,20 @@
 import React from 'react'
 
-import NavIcon from 'components/reusable/nav-icon'
-import navigation from 'data/nav'
 import glamorous from 'glamorous'
+import IconWithLink from 'components/reusable/icon-link'
+import navigation from 'data/nav'
 
 const NavBar = () => (
   <Container>
     {navigation.map(nav_item => {
       if (!nav_item.isReleased) return null
-      return <NavIcon key={nav_item.label} {...nav_item} />
+      return (
+        <IconWithLink
+          key={nav_item.label}
+          alt={`Navigate to the ${nav_item.label} page.`}
+          {...nav_item}
+        />
+      )
     })}
   </Container>
 )

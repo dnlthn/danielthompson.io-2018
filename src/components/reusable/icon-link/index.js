@@ -1,11 +1,10 @@
 import React from 'react'
-import glamorous from 'glamorous'
 import Link from 'gatsby-link'
 
-import Tooltip from 'components/reusable/tooltip'
 import ScalableImg from 'components/reusable/scalable-img'
+import Tooltip from 'components/reusable/tooltip'
 
-const NavIcon = ({ path, label, svg, isReleased }) => {
+const IconWithLink = ({ path, label, svg, alt }) => {
   return path.startsWith('/') ? (
     <Link
       to={path}
@@ -19,16 +18,16 @@ const NavIcon = ({ path, label, svg, isReleased }) => {
       }}
     >
       <Tooltip text={label} putBelow>
-        <ScalableImg src={svg} alt={`Navigate to the ${label} page`} />
+        <ScalableImg src={svg} alt={alt} />
       </Tooltip>
     </Link>
   ) : (
     <a href={path}>
       <Tooltip text={label} putBelow>
-        <ScalableImg src={svg} alt={`Navigate to the ${label} page`} />
+        <ScalableImg src={svg} alt={alt} />
       </Tooltip>
     </a>
   )
 }
 
-export default NavIcon
+export default IconWithLink
