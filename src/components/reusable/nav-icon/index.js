@@ -5,8 +5,6 @@ import Link from 'gatsby-link'
 import Tooltip from 'components/reusable/tooltip'
 
 const NavIcon = ({ path, label, svg, isReleased }) => {
-  // if (!isReleased) return <div />
-
   return path.startsWith('/') ? (
     <Link
       to={path}

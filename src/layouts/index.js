@@ -12,9 +12,6 @@ import {
   MainLayout,
 } from 'components/unique/root-layouts'
 import NavBar from 'components/unique/nav-bar'
-import NavIcon from 'components/reusable/nav-icon'
-
-import navigation from 'data/nav'
 
 const RootLayout = ({ children, data }) => {
   const { title, description, keywords } = data.site.siteMetadata

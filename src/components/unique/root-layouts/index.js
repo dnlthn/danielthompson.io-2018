@@ -9,10 +9,6 @@ export const ContentLayout = glamorous.div({
 })
 
 export const MainLayout = glamorous.div({
-  // TEMP: Temporary color to see the div without
-  // having to use devtools
-  // backgroundColor: 'purple',
-
   display: 'flex',
   flex: 1,
   flexDirection: 'column',
