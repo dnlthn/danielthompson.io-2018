@@ -2,28 +2,30 @@ import glamorous from 'glamorous'
 
 export const LogoLayout = glamorous.div({
   alignSelf: 'center',
+  marginTop: 'auto',
 })
 
 export const ContentLayout = glamorous.div({
-  alignSelf: 'center',
+  marginBottom: 'auto',
 })
 
 export const MainLayout = glamorous.div({
   display: 'flex',
-  flex: 1,
   flexDirection: 'column',
   maxWidth: '960px',
   padding: '2rem',
 })
 
 export const BodyLayout = glamorous.div({
-  alignItems: 'center',
-  backgroundColor: '#37394C',
+  color: '#F2F2F8',
   display: 'flex',
-  height: '100%',
-  justifyContent: 'center',
-  position: 'absolute',
-  width: '100%',
   fontFamily:
     'Titillium Web, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  fontSize: '1.125rem',
+  height: '100vh',
+  justifyContent: 'center',
+  MozOsxFontSmoothing: 'grayscale',
+  position: 'absolute',
+  width: '100%',
+  WebkitFontSmoothing: 'antialiased',
 })
