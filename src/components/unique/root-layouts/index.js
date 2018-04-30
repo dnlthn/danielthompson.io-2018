@@ -1,7 +1,7 @@
 import glamorous from 'glamorous'
 
 export const LogoLayout = glamorous.div({
-  flex: 1,
+  alignSelf: 'center',
 })
 
 export const ContentLayout = glamorous.div({
@@ -26,7 +26,6 @@ export const BodyLayout = glamorous.div({
   display: 'flex',
   height: '100%',
   justifyContent: 'center',
-  overflow: 'hidden',
   position: 'absolute',
   width: '100%',
   fontFamily:

@@ -2,7 +2,7 @@ import React from 'react'
 import glamorous from 'glamorous'
 import Link from 'gatsby-link'
 
-import Tooltip from 'components/tooltip'
+import Tooltip from 'components/reusable/tooltip'
 
 const NavIcon = ({ path, label, svg, isReleased }) => {
   // if (!isReleased) return <div />
@@ -12,13 +12,13 @@ const NavIcon = ({ path, label, svg, isReleased }) => {
       to={path}
       activeStyle={{ borderBottom: '3px solid #FECA57', borderRadius: '1px' }}
     >
-      <Tooltip text={label}>
+      <Tooltip text={label} putBelow>
         <Image src={svg} alt={`Navigate to the ${label} page`} />
       </Tooltip>
     </Link>
   ) : (
     <a href={path}>
-      <Tooltip text={label}>
+      <Tooltip text={label} putBelow>
         <Image src={svg} alt={`Navigate to the ${label} page`} />
       </Tooltip>
     </a>
