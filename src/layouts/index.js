@@ -4,7 +4,9 @@ import React from 'react'
 
 import 'glamor/reset'
 
-import Logo from 'components/reusable/logo'
+import ScalableImg from 'components/reusable/scalable-img'
+import logo_svg from 'images/daniel-thompson-logo.svg'
+
 import {
   BodyLayout,
   ContentLayout,
@@ -33,7 +35,7 @@ const RootLayout = ({ children, data }) => {
           ]}
         />
         <LogoLayout>
-          <Logo />
+          <ScalableImg src={logo_svg} alt="Daniel Thompson Logo" />
           <NavBar />
         </LogoLayout>
         <ContentLayout>{children()}</ContentLayout>
