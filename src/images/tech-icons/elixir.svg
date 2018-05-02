@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 20 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Elixir</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Skills" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-497.000000, -1114.000000)">
+        <g id="Body" transform="translate(489.000000, 174.000000)" fill="#F2F2F8">
+            <g id="Occasionally" transform="translate(8.000000, 710.000000)">
+                <g id="Skills" transform="translate(0.000000, 74.000000)">
+                    <g id="Languages" transform="translate(0.000000, 114.000000)">
+                        <g id="Logos" transform="translate(0.000000, 42.000000)">
+                            <g id="Elixir">
+                                <path d="M10.5095038,0 C7.06334995,1.16923077 3.80181149,6 0.724888411,14.4923077 C-2.50588082,26.8615385 5.89411918,30 9.58642687,30 C13.2787346,30 18.7248884,28.4307692 19.4633499,20.9538462 C19.6615385,18.4615385 19.4633499,15.9692308 15.6787346,12.4615385 C12.0479653,8.76923077 10.3248884,4.61538462 10.5095038,0 Z" id="elixirlogo"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
