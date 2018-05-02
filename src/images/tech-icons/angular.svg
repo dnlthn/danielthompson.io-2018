@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>angular-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Skills" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-497.000000, -1474.000000)">
+        <g id="Body" transform="translate(489.000000, 174.000000)" fill="#F2F2F8" fill-rule="nonzero">
+            <g id="Previously" transform="translate(8.000000, 1182.000000)">
+                <g id="Skills" transform="translate(0.000000, 74.000000)">
+                    <g id="Tooling">
+                        <g id="Logos" transform="translate(0.000000, 42.000000)">
+                            <g id="angular-icon" transform="translate(0.000000, 2.000000)">
+                                <path d="M0.0109864958,5.02082857 L13.8869306,0.0769054704 L28.1364157,4.9329366 L25.8292515,23.291371 L13.8869306,29.9052415 L2.13138018,23.3792629 L0.0109864958,5.02082857 Z M13.9089036,3.55962463 L5.26253147,22.7969787 L8.49256123,22.7420463 L10.2284276,18.4023804 L13.9198901,18.4023804 L13.9308767,18.4023804 L17.9848936,18.4023804 L19.8855574,22.7969787 L22.9727626,22.8519111 L13.9089036,3.55962463 Z M13.9308767,9.72304875 L16.8532845,15.8315404 L14.0517281,15.8315404 L13.9089036,15.8315404 L11.3600366,15.8315404 L13.9308767,9.72304875 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
