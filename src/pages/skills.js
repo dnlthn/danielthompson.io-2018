@@ -9,7 +9,9 @@ const Skills = () => (
       return (
         <div>
           <Statement>
-            Here's some tech I use{' '}
+            {value === 'previously'
+              ? `Here's some tech I have `
+              : `Here's some tech I use `}
             <DropdownWrapper>
               <FrequencyDropdown value={value} onChange={handleChange}>
                 <option value="daily">daily</option>
@@ -17,6 +19,7 @@ const Skills = () => (
                 <option value="previously">previously</option>
               </FrequencyDropdown>
             </DropdownWrapper>
+            {value === 'previously' ? ` used` : ''}
           </Statement>
           <SkillsList frequency={value} category="tooling" />
           <SkillsList frequency={value} category="languages" />
