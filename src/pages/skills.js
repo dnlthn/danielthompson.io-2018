@@ -3,6 +3,7 @@ import glamorous from 'glamorous'
 
 import SkillsList from 'components/templates/skills-list'
 import Dropdown from 'containers/dropdown'
+
 const Skills = () => (
   <Dropdown initialValue="daily">
     {({ value, handleChange }) => {
