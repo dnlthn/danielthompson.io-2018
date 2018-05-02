@@ -13,8 +13,8 @@ import {
   ContentLayout,
   LogoLayout,
   MainLayout,
-} from 'components/unique/root-layouts'
-import NavBar from 'components/unique/nav-bar'
+} from 'components/templates/root-layouts'
+import NavBar from 'components/templates/nav-bar'
 
 css.global('body', {
   backgroundColor: '#37394C',

@@ -1,7 +1,7 @@
 import React from 'react'
-import SkillsList from 'components/unique/skills-list'
 import glamorous from 'glamorous'
 
+import SkillsList from 'components/templates/skills-list'
 const Skills = () => (
   <div>
     <Statement>
