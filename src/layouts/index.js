@@ -19,6 +19,7 @@ css.global('body', {
   fontFamily:
     'Titillium Web, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   fontSize: '1.125rem',
+  height: '100%',
   justifyContent: 'center',
   MozOsxFontSmoothing: 'grayscale',
   position: 'absolute',
