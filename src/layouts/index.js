@@ -9,7 +9,6 @@ import ScalableImg from 'components/reusable/scalable-img'
 import logo_svg from 'images/daniel-thompson-logo.svg'
 
 import {
-  BodyLayout,
   ContentLayout,
   LogoLayout,
   MainLayout,
@@ -17,34 +16,41 @@ import {
 import NavBar from 'components/templates/nav-bar'
 
 css.global('body', {
+  flexDirection: 'column',
+  alignItems: 'center',
   backgroundColor: '#37394C',
+  color: '#F2F2F8',
+  display: 'flex',
+  fontFamily:
+    'Titillium Web, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  fontSize: '1.125rem',
+  MozOsxFontSmoothing: 'grayscale',
+  WebkitFontSmoothing: 'antialiased',
 })
 const RootLayout = ({ children, data }) => {
   const { title, description, keywords } = data.site.siteMetadata
 
   return (
-    <BodyLayout>
-      <MainLayout>
-        <Helmet
-          title={title}
-          meta={[
-            {
-              name: 'description',
-              content: description,
-            },
-            {
-              name: 'keywords',
-              content: keywords,
-            },
-          ]}
-        />
-        <LogoLayout>
-          <ScalableImg src={logo_svg} alt="Daniel Thompson Logo" />
-          <NavBar />
-        </LogoLayout>
-        <ContentLayout>{children()}</ContentLayout>
-      </MainLayout>
-    </BodyLayout>
+    <MainLayout>
+      <Helmet
+        title={title}
+        meta={[
+          {
+            name: 'description',
+            content: description,
+          },
+          {
+            name: 'keywords',
+            content: keywords,
+          },
+        ]}
+      />
+      <div>
+        <ScalableImg src={logo_svg} alt="Daniel Thompson Logo" />
+        <NavBar />
+      </div>
+      <ContentLayout>{children()}</ContentLayout>
+    </MainLayout>
   )
 }
 
