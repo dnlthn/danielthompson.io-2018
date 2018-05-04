@@ -29,11 +29,12 @@ const Container = glamorous.div({
   display: 'grid',
   gridGap: '1rem',
   gridTemplateColumns: `repeat(${number_of_displayed_icons}, 20px)`,
-  justifyContent: 'end',
+  justifyContent: 'center',
   marginTop: '.5rem',
   marginBottom: '4rem',
 
   '@media(min-width: 576px)': {
+    justifyContent: 'end',
     gridGap: '1.5rem',
     gridTemplateColumns: `repeat(${number_of_displayed_icons}, 25px)`,
   },
