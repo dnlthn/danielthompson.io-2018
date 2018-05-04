@@ -28,10 +28,8 @@ const Container = glamorous.div(
   {
     alignItems: 'center',
     display: 'grid',
-    gridGap: '1.5rem',
-    justifyContent: 'start',
-    marginTop: '.5rem',
-    gridTemplateColumns: `repeat(5, 60px)`,
+    gridGap: '1.25rem',
+    gridTemplateColumns: `repeat(5, 40px)`,
     gridTemplateRows: '5rem',
     '& img': {
       width: '100%',

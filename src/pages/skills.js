@@ -35,7 +35,7 @@ const Statement = glamorous.h1({
   fontWeight: '200',
   color: '#F2F2F8',
   marginBottom: '3rem',
-  fontSize: '1.625rem',
+  fontSize: '1.25rem',
 
   '@media(min-width: 576px)': {
     fontSize: '1.875rem',
@@ -44,6 +44,10 @@ const Statement = glamorous.h1({
 
 const DropdownWrapper = glamorous.span({
   borderBottom: '2px dashed #FECA57',
+  fontSize: '1.25rem',
+  '@media(min-width: 576px)': {
+    fontSize: '1.875rem',
+  },
 })
 
 const FrequencyDropdown = glamorous.select({
