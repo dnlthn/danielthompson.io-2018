@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import ScalableImg from 'components/reusable/scalable-img'
 import Tooltip from 'components/reusable/tooltip'
 
-const IconWithLink = ({ path, label, svg, alt }) => {
+const IconWithLink = ({ path, label, svg, alt, height }) => {
   return path.startsWith('/') ? (
     <Link
       to={path}
@@ -18,13 +18,13 @@ const IconWithLink = ({ path, label, svg, alt }) => {
       }}
     >
       <Tooltip text={label} putBelow>
-        <ScalableImg src={svg} alt={alt} />
+        <img src={svg} alt={alt} height={height} />
       </Tooltip>
     </Link>
   ) : (
     <a href={path}>
       <Tooltip text={label} putBelow>
-        <ScalableImg src={svg} alt={alt} />
+        <img src={svg} alt={alt} height={height} />
       </Tooltip>
     </a>
   )

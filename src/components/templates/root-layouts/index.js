@@ -1,13 +1,16 @@
 import glamorous from 'glamorous'
 
-export const ContentLayout = glamorous.div({
-  width: '100%',
+export const HeaderLayout = glamorous.div({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-end',
 })
 
 export const MainLayout = glamorous.div({
+  alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  padding: '.5rem',
-  maxWidth: '960px',
+  justifyContent: 'center',
+  marginLeft: '1rem',
+  marginRight: '1rem',
 })

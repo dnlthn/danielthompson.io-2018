@@ -7,37 +7,38 @@ import navigation from 'data/nav'
 
 const NavBar = () => (
   <Container>
-    {navigation.map(nav_item => {
-      if (!nav_item.isReleased) return null
-      return (
-        <IconWithLink
-          key={nav_item.label}
-          alt={`Navigate to the ${nav_item.label} page.`}
-          {...nav_item}
-        />
-      )
-    })}
+    <IconContainer>
+      {navigation.map(nav_item => {
+        if (!nav_item.isReleased) return null
+        return (
+          <IconWithLink
+            key={nav_item.label}
+            alt={`Navigate to the ${nav_item.label} page.`}
+            {...nav_item}
+            height="30px"
+          />
+        )
+      })}
+    </IconContainer>
   </Container>
 )
 
-const number_of_displayed_icons = navigation.filter(
-  nav_item => nav_item.isReleased
-).length
-
 const Container = glamorous.div({
-  alignItems: 'center',
-  display: 'grid',
-  gridGap: '1rem',
-  gridTemplateColumns: `repeat(${number_of_displayed_icons}, 20px)`,
+  display: 'flex',
   justifyContent: 'center',
+  marginBottom: '2rem',
   marginTop: '.5rem',
-  marginBottom: '4rem',
+  alignSelf: 'center',
 
   '@media(min-width: 576px)': {
-    justifyContent: 'end',
-    gridGap: '1.5rem',
-    gridTemplateColumns: `repeat(${number_of_displayed_icons}, 25px)`,
+    marginBottom: '3rem',
   },
+})
+
+const IconContainer = glamorous.div({
+  display: 'flex',
+  justifyContent: 'space-between',
+  width: '150px',
 })
 
 export default NavBar

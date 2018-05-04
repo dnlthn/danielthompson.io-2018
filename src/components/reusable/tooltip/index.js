@@ -12,7 +12,6 @@ const Container = glamorous.div({
   display: 'inline-block',
   height: 'auto',
   position: 'relative',
-  width: '100%',
 
   '@media(min-width: 1200px)': {
     ':hover span': {

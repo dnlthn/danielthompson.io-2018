@@ -13,10 +13,10 @@ const SkillsList = ({ category, frequency }) => {
   return (
     <div style={{ marginBottom: '3rem' }}>
       <SectionHeader>{category}</SectionHeader>
-      <Container length={filtered_skills.length}>
+      <Container>
         {filtered_skills.map(({ label, svg }) => (
           <Tooltip key={label} text={label}>
-            <img alt={label} src={svg} />
+            <TechIcon alt={label} src={svg} />
           </Tooltip>
         ))}
       </Container>
@@ -24,29 +24,19 @@ const SkillsList = ({ category, frequency }) => {
   )
 }
 
-const Container = glamorous.div(
-  {
-    alignItems: 'center',
-    display: 'grid',
-    gridGap: '1.25rem',
-    gridTemplateColumns: `repeat(5, 40px)`,
-    gridTemplateRows: '5rem',
-    '& img': {
-      width: '100%',
-      maxHeight: '50px',
-    },
+const TechIcon = glamorous.img({
+  margin: '1rem',
+  height: '40px',
 
-    '@media(min-width: 576px)': {
-      gridGap: '1rem',
-      gridTemplateColumns: `repeat(5, 80px)`,
-    },
+  '@media(min-width: 576px)': {
+    height: '50px',
   },
-  ({ length }) => ({
-    '@media(min-width: 768px)': {
-      gridTemplateColumns: `repeat(${length}, 90px)`,
-    },
-  })
-)
+})
+
+const Container = glamorous.div({
+  display: 'flex',
+  flexWrap: 'wrap',
+})
 
 const SectionHeader = glamorous.h2({
   fontSize: '1.125rem',
